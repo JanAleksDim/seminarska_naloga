@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
-$dbname = 'your_database_name';
-$username = 'your_database_username';
-$password = 'your_database_password';
+$dbname = 'db_seminarska';
+$username = 'root';
+$password = '';
 
 // Create a MySQL connection
 $conn = new mysqli($host, $username, $password, $dbname);
@@ -25,7 +25,7 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naloga 4</title>
+    <title>seminarska_naloga</title>
     <link rel="stylesheet" href="style.css">
 </head>
 

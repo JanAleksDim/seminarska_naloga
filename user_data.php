@@ -8,9 +8,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { //Server checks if the correct input
     $phone = $_POST["phone"]; //sets the phone variable to the value of the phone input field
 
     $host = 'localhost'; //host sets the host name of the database server, in this case it is the "localhost", same machine
-    $dbname = 'your_database_name';  //database name
-    $username = 'your_database_username'; //database username
-    $password = 'your_database_password'; //database password
+    $dbname = 'db_seminarska';  //database name
+    $username = 'root'; //database username
+    $password = ''; //database password
 
     // Create a MySQL connection
     $conn = new mysqli($host, $username, $password, $dbname);
@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { //Server checks if the correct input
     // Execute the SQL query directly
     $query = "INSERT INTO users (name, email, phone) VALUES ('$name', '$email', '$phone')";
     if ($conn->query($query)) {
-        echo "Data saved successfully!";
+        header('Location: readout.php');
     } else {
         echo "There was an error!";
     }

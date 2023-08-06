@@ -1,25 +1,3 @@
-<?php
-$host = 'localhost';
-$dbname = 'your_database_name';
-$username = 'your_database_username';
-$password = 'your_database_password';
-
-// Create a MySQL connection
-$conn = new mysqli($host, $username, $password, $dbname);
-
-// Check if the connection was successful
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-// Fetch data from the 'users' table
-$query = "SELECT * FROM users";
-$result = $conn->query($query);
-
-// Close the connection
-$conn->close();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,7 +33,7 @@ $conn->close();
     <!-- MAIN -->
     <main>
         <h1>This is a form</h1>
-        <form action="user_data.php" class="form">
+        <form action="user_data.php" class="form" method="POST">
             <div class="form-element">
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="name" placeholder="Enter your name" required>
