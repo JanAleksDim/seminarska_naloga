@@ -1,0 +1,49 @@
+body {
+    margin: 0; /*I set the margin to 0 so that the body would reach all the way to the border*/
+} 
+
+header, footer { /*this section targets both the header and footer*/
+    background-color: firebrick; /*I set the background color*/
+    color: white; /*I set the color of all child elements to white*/
+    padding: 20px; /*I set the padding to 20px so it would move the text slightly away from the border*/
+}
+
+header {
+    display: flex; /*I lined up the menu and the logo*/
+    justify-content: space-between; /*I moved the menu the furthest possible position right*/
+}
+
+main {
+    padding: 20px; /*same as previous*/
+    max-width: 800px; /*I limited the max width so that the text would look more uniform*/
+    margin: 0 auto; /*I made the margin 0 auto so it would place the text in the middle*/
+}
+
+img {
+    display: inline-block; /*I placed a random AI generated image*/
+    max-width: 100%; /*I limited the width of the image so that it would scale in proportion to the size of the page*/
+}
+
+.menu {
+    margin: 0; /*I set it to 0 so that it removes the default margin*/
+    list-style: none; /*I set the style to "none" so that it removes bullet points*/
+    display: flex; /*I set the display to flex so the home buttons would be presented in a horizontal line*/
+    gap: 10px;
+}
+
+.menu a {
+    color: white; /*Set the color of all links inside Menu to white*/
+    text-decoration: none; /*Removed the underline from the links in the menu*/
+}
+
+.player {
+    margin-top: 15px; /*Moved the player a bit down*/
+}
+
+.form-element {
+    margin-bottom: 10px; /*I made the form input and added a margin so that the input windows would have some spacing*/
+}
+
+input {
+    padding: 5px; /*I added some padding to the input elements to make them look better*/
+}
